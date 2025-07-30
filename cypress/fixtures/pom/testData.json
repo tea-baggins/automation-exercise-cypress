@@ -1,0 +1,10 @@
+{
+    "name": "August",
+    "emailAddress": "myemail@gmail.com",
+    "message": "here is my message",
+    "successSubmitionMessage":
+      "Success! Your details have been submitted successfully.",
+      "successSubscriptionMessage":"'You have been successfully subscribed!'",
+      "addComment": "Comment here", 
+      "ThankYouMessage":"Thank you for your review."
+  }

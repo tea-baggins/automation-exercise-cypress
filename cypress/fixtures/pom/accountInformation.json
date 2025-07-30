@@ -1,0 +1,15 @@
+{
+    "name":"August",
+    "password": "987654321",
+    "dateOfBirth": "22 August 2000",
+    "firstName": "August",
+    "lastName": "Tets",
+    "company": "Test",
+    "address":"123 Str",
+    "country": "Canada",
+    "state": "Alberta",
+    "city": "Calgary",
+    "zipCode": "f5t6y7",
+    "mobileNumber": "123456789",
+    "h2": "Account Created!"
+}

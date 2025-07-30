@@ -1,0 +1,8 @@
+{
+    "nameOnCard":"Test User",
+    "cardNumber": "1234567890",
+    "cvc": "123",
+    "expirationMonth": "12",
+    "expirationYear": "2027",
+    "successMessage": "Your order has been placed successfully!"
+}
