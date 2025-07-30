@@ -1,7 +1,7 @@
 # Automation Exercise Cypress 2025
 
 <p align="center">
-  <img src="https://www.automationexercise.com/static/images/home/logo.png" alt="Website for practice automation" width="100" />
+  <img src="https://www.automationexercise.com/static/images/home/logo.png" alt="Website for practice automation" width="350" />
 </p>
 
 AutomationExercise is a public e-commerce demo site created for QA engineers to practice automation and API testing at any level, from beginner to advanced. This framework provides automated UI test coverage for the site's core features.
