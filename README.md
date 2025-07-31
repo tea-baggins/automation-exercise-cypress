@@ -32,7 +32,7 @@ AutomationExercise is a public e-commerce demo site created for QA engineers to 
 ## ⚙ How to Run
 
 1. Clone the repository  
-   `git clone https://github.com/your-username/automationexercise-cypress.git`
+   `git clone https://github.com/tea-baggins/automation-exercise-cypress`
 2. Open VSCode and navigate to project folder  
    `cd Cypress_Automation_Exercise_2025`
 3. Install dependencies  
