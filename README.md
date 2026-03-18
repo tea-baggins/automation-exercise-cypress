@@ -1,5 +1,7 @@
 # Automation Exercise Cypress 2025
 
+![End-to-end tests](https://github.com/tea-baggins/automation-exercise-cypress/actions/workflows/main.yml/badge.svg)
+
 <p align="center">
   <img src="https://www.automationexercise.com/static/images/home/logo.png" alt="Website for practice automation" width="350" />
 </p>
