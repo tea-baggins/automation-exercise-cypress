@@ -1,0 +1,18 @@
+# Dependencies (The heaviest folder, should never be pushed)
+node_modules/
+
+# Cypress binary files and cache
+/Users/AppData/Local/Cypress/Cache
+.recommender/
+
+# Test artifacts and results (screenshots, videos, logs)
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+cypress/reports/
+
+# OS and IDE system files
+Thumbs.db
+.DS_Store
+.vscode/
+npm-debug.log*

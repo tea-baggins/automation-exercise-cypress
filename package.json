@@ -1,13 +1,15 @@
 {
-  "name": "cypress_automation_exercise_2025",
+  "name": "automation-exercise-cypress",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cypress E2E automation framework for Automation Exercise website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "npm run cy:run"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "cypress": "^14.3.3",
     "cypress-downloadfile": "^1.2.4"

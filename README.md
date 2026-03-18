@@ -8,33 +8,33 @@ AutomationExercise is a public e-commerce demo site created for QA engineers to 
 
 ## 🚀 Features
 
-- Automated UI tests for registration, login, product search, cart management, and checkout.
-- Clean Page Object Model architecture for easy maintenance.
-- Tests include validation of UI elements, cart price, file downloads, etc.
-- Global cleanup ensures a consistent starting state before tests.
+* **Comprehensive E2E Coverage:** Automated UI tests for registration, login, product search, cart management, and checkout.
+* **Design Pattern:** Clean **Page Object Model (POM)** architecture for high maintainability and scalability.
+* **Advanced Validations:** Includes verification of UI elements, dynamic cart calculations, and file downloads.
+* **Test Isolation:** Global cleanup logic ensures a consistent and clean starting state before every test.
 
 ## 📁 Project Structure
 
-- `/e2e/` — Cypress test specs.
-- `/pageObject/` — Page Object classes for UI components and methods.
-- `/fixtures/` — Test data files (JSON).
-- `/support/` — Custom Cypress commands and reusable utilities.
-- `cypress.config.js` — Cypress configuration file.
+* `cypress/e2e/` — Cypress test specifications.
+* `cypress/pageObject/` — Page Object classes for UI components and methods.
+* `cypress/fixtures/` — Test data files (JSON).
+* `cypress/support/` — Custom Cypress commands and reusable utilities.
+* `cypress.config.js` — Cypress configuration file.
 
 ## 📚 Prerequisites
 
-- Chrome browser
-- Node.js version 18 or higher ([download](https://nodejs.org/en/download))
-- npm (comes bundled with Node.js)
-- VSCode or any code editor
-- Cypress (installed automatically via npm)
+* **Chrome browser** (or any Chromium-based browser).
+* **Node.js** version 18 or higher.
+* **npm** (comes bundled with Node.js).
+* **VS Code** or any preferred code editor.
+* **Cypress** (installed automatically via npm).
 
 ## ⚙ How to Run
 
 1. Clone the repository  
    `git clone https://github.com/tea-baggins/automation-exercise-cypress`
 2. Open VSCode and navigate to project folder  
-   `cd Cypress_Automation_Exercise_2025`
+   `cd automation-exercise-cypress`
 3. Install dependencies  
    `npm install`
 4. Run Cypress interactive runner  
@@ -62,22 +62,12 @@ describe("Add Products in Cart", () => {
 });
 ```
 
-## 📜 MUST-FOLLOW RULES
+## 🛠 Best Practices Followed
 
-- Do not install any new libraries, plugins, or tools without approval.
-- Do not modify existing configuration files (`cypress.config.js`, `package.json`, etc.) unless instructed.
-- Focus changes on test scripts and test-related assets only.
-- Commit only test-related files; do not commit build files, lock files, or config files unless necessary.
-
-**Do not push changes to these files:**
-
-- `README.md`
-- `package.json`
-- `package-lock.json`
-- `cypress.config.js`
-- `.gitignore`
-- `e2e.js`
-- Any other non-test-related files
+* **Atomic Commits:** Only test-related files are committed; build artifacts, screenshots, and logs are strictly ignored via `.gitignore`.
+* **Standardized Configuration:** Core configuration files are maintained to ensure environment consistency across different machines and CI/CD pipelines.
+* **No Hardcoded Data:** All test data is managed via **Cypress Fixtures** (JSON), ensuring test flexibility and easy data updates.
+* **Page Object Model (POM):** UI elements and action methods are separated from test logic to reduce code duplication and simplify maintenance.
 
 ## 📝 License
 
