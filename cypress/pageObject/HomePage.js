@@ -61,8 +61,9 @@ class HomePage {
       timeout: 10000,
     })
       .first()
-      .click();
-    return this.getRecommendedItemsSection().click();
+      .scrollIntoView()
+      .click({ force: true });
+    return this.getRecommendedItemsSection().click({ force: true });
   }
 
   clickViewCartLinkModal() {
