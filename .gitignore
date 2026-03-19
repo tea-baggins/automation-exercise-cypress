@@ -1,15 +1,19 @@
-# Dependencies (The heaviest folder, should never be pushed)
+# Dependencies
 node_modules/
 
 # Cypress binary files and cache
-/Users/AppData/Local/Cypress/Cache
 .recommender/
 
-# Test artifacts and results (screenshots, videos, logs)
+# Test artifacts and results
 cypress/screenshots/
 cypress/videos/
 cypress/downloads/
+cypress/results/
 cypress/reports/
+
+# Mochawesome reports (Generated in CI)
+mochawesome.json
+public/
 
 # OS and IDE system files
 Thumbs.db

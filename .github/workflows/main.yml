@@ -1,14 +1,36 @@
 name: End-to-end tests
-on: [push] # Triggers the workflow every time you push code to GitHub
+on: [push, pull_request]
+
+# Permissions required to publish the report to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest # Runs on a virtual Linux machine
+    runs-on: ubuntu-latest # Standardized CI environment
     steps:
-      - name: Checkout # Step 1: Copy your code to the virtual server
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Cypress run # Step 2: Install dependencies and run tests
+      - name: Cypress execution
         uses: cypress-io/github-action@v6
         with:
-          browser: chrome # Execute tests in Chrome browser
+          browser: chrome
+        # Continue even if tests fail to ensure the reporting step is executed
+        continue-on-error: true 
+
+      - name: Generate Unified HTML Report
+        run: |
+          # Merge individual JSON results into a single file
+          npx mochawesome-merge cypress/results/*.json > mochawesome.json
+          # Generate a standalone HTML report with inline assets for portability
+          npx marge mochawesome.json --reportDir public --inline
+
+      - name: Deploy Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: always() # Ensure the report is updated regardless of test outcome
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

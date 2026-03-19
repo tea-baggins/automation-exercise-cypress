@@ -6,12 +6,17 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test": "npm run cy:run"
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "test": "npm run cy:run:chrome"
   },
-  "author": "",
+  "author": "tea-baggins",
   "license": "MIT",
   "devDependencies": {
     "cypress": "^14.3.3",
-    "cypress-downloadfile": "^1.2.4"
+    "cypress-downloadfile": "^1.2.4",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }

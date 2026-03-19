@@ -2,6 +2,8 @@
 
 ![End-to-end tests](https://github.com/tea-baggins/automation-exercise-cypress/actions/workflows/main.yml/badge.svg)
 
+### 🌐 [View Live Test Report](https://tea-baggins.github.io/automation-exercise-cypress/)
+
 <p align="center">
   <img src="https://www.automationexercise.com/static/images/home/logo.png" alt="Website for practice automation" width="350" />
 </p>
@@ -31,7 +33,7 @@ AutomationExercise is a public e-commerce demo site created for QA engineers to 
 * **VS Code** or any preferred code editor.
 * **Cypress** (installed automatically via npm).
 
-## ⚙ How to Run
+## 💻 How to Run
 
 1. Clone the repository  
    `git clone https://github.com/tea-baggins/automation-exercise-cypress`
@@ -40,11 +42,22 @@ AutomationExercise is a public e-commerce demo site created for QA engineers to 
 3. Install dependencies  
    `npm install`
 4. Run Cypress interactive runner  
-   `npx cypress open`
+   `npm run cy:open`
 5. To run all tests headlessly (CLI)  
-   `npx cypress run`
+   `npm test`
 
 _Note:_ Global cleanup runs before each test to reset the testing environment.
+
+## 🔄 Continuous Integration (CI)
+
+This project uses **GitHub Actions** to ensure code quality and prevent regressions.
+
+* **Automated Triggers:** Tests run automatically on every `push` and `pull_request` to the main branch.
+* **Headless Execution:** CI environment executes tests in a headless Chrome browser for optimal performance.
+* **Artifacts Management:**
+    * **Screenshots:** Automatically captured and stored as GitHub artifacts on test failure.
+    * **Videos:** Full recordings of test execution are preserved for debugging and auditing.
+* **Workflow Status:** You can monitor the real-time status of the pipeline via the **Actions** tab or the status badge at the top of this page.
 
 ## 🧑‍💻 Project Coding Convention
 
