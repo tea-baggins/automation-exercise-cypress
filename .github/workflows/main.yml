@@ -26,7 +26,7 @@ jobs:
           # Merge individual JSON results into a single file
           npx mochawesome-merge cypress/results/*.json > mochawesome.json
           # Generate a standalone HTML report with inline assets for portability
-          npx marge mochawesome.json --reportDir public --inline
+          npx marge mochawesome.json --reportDir public --inline --reportFilename index
 
       - name: Deploy Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
