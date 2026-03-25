@@ -1,8 +1,13 @@
-# Automation Exercise Cypress 2025
+# <img src="https://raw.githubusercontent.com/cypress-io/cypress/develop/assets/cypress-logo-dark.png" height="32" style="vertical-align: middle"> Automation Exercise Cypress
 
-![End-to-end tests](https://github.com/tea-baggins/automation-exercise-cypress/actions/workflows/main.yml/badge.svg)
-
-### 🌐 [View Live Test Report](https://tea-baggins.github.io/automation-exercise-cypress/)
+<p align="center">
+  <a href="https://github.com/tea-baggins/automation-exercise-cypress/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/tea-baggins/automation-exercise-cypress/main.yml?branch=main&label=Cypress%20Tests&style=for-the-badge&logo=cypress&logoColor=white&color=17202C" alt="Cypress Tests">
+  </a>
+  <a href="https://tea-baggins.github.io/automation-exercise-cypress/">
+    <img src="https://img.shields.io/badge/Cypress%20Report-View%20Here-04C38E?style=for-the-badge&logo=cypress&logoColor=white&color=04C38E" alt="Cypress Report">
+  </a>
+</p>
 
 <p align="center">
   <img src="https://www.automationexercise.com/static/images/home/logo.png" alt="Website for practice automation" width="350" />
@@ -54,10 +59,18 @@ This project uses **GitHub Actions** to ensure code quality and prevent regressi
 
 * **Automated Triggers:** Tests run automatically on every `push` and `pull_request` to the main branch.
 * **Headless Execution:** CI environment executes tests in a headless Chrome browser for optimal performance.
-* **Artifacts Management:**
-    * **Screenshots:** Automatically captured and stored as GitHub artifacts on test failure.
-    * **Videos:** Full recordings of test execution are preserved for debugging and auditing.
 * **Workflow Status:** You can monitor the real-time status of the pipeline via the **Actions** tab or the status badge at the top of this page.
+
+## 📊 Reporting
+
+This project uses **Mochawesome** to generate clean, lightweight, and interactive test reports.
+
+* **Live Report:** Hosted on GitHub Pages. [View the latest report here](https://tea-baggins.github.io/automation-exercise-cypress/).
+* **Key Features:**
+    * **Visual Summary:** High-level overview of total tests, passes, and failures.
+    * **Detailed Logs:** Step-by-step execution details and error messages for failed tests.
+    * **Performance Metrics:** Real-time tracking of test duration to monitor suite performance.
+* **CI Integration:** Reports are automatically merged and deployed to the web after every run in GitHub Actions.
 
 ## 🧑‍💻 Project Coding Convention
 
@@ -69,7 +82,7 @@ This project uses **GitHub Actions** to ensure code quality and prevent regressi
 
 example:
 
-```
+```javascript
 describe("Add Products in Cart", () => {
   it("TC_11 | Verify add products in cart", () => {
     // test steps here
